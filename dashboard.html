@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../Library_Management/css/dashboard.css">
+</head>
+<body>
+  <div class="background">
+  <div class="search-book">
+    <select name="search" id="booksearchdropdown" class="select-search">
+      <option value="title">Search by title</option>
+      <option value="author">Search by author</option>
+    </select>
+    <input type="text" placeholder="Search..." id="book-search-input">
+    <button class="button" onclick="searchBooks()">Search</button>
+    <select name="search" id="booksortdropdown" class="" onchange="sortBooks()">
+      <option value="">Select Sort</option>
+      <option value="title">Sort by title</option>
+      <option value="author">Sort by author</option>
+    </select>
+    <div id="book-cart">
+      <span style="color: black;position: relative; top:30%;">Add Cart ...</span>
+    </div>
+  </div>
+  <br>
+  <div id="book-count"></div>
+  <div id="book-list"></div>
+  </div> 
+  <script src="./js/api.js"></script>
+</body>
+</html>
